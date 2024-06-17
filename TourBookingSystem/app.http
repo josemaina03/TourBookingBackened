@@ -1,0 +1,188 @@
+#### admin
+POST http://localhost:3000/auth/register
+Content-Type: application/json
+
+{
+  "Name": "Joseph muhia",
+  "Email": "josephmuhia257@gmail.com",
+  "Password": "Muhia0123!",
+  "isAdmin": 1
+   
+
+}
+
+### admin
+
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+  "email": "josephmuhia257@gmail.com",
+  "password": "Muhia0123!",
+  "isEmailSent": 1
+
+}
+####default user
+POST http://localhost:3000/auth/register
+Content-Type: application/json
+
+{
+  "Name": "Joseph muhia",
+  "Email": "muhiamaina42@gmail.com",
+  "Password": "Muhia0123!",
+  "isAdmin": 0
+}
+
+#### Login User
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+  "email": "muhiamaina42@gmail.com",
+  "password": "Muhia0123!"
+}
+
+### Get All Users
+GET http://localhost:3000/auth/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJTdWIiOiJkMWY1ZmUxOC0xMGM1LTQ5NTItYmI1YS1mODBmYjNlMGQ0Y2YiLCJOYW1lIjoiSm9zZXBoIG11aGlhIiwiaXNBZG1pbiI6MSwiaWF0IjoxNzE4NjMxMTc2LCJleHAiOjE3MTg2MzQ3NzZ9.fOYArs0AKenbLlaImXfRzFKynlodknHJ_lwzGr52ICQ
+
+### Add Tour
+POST http://localhost:3000/tours
+Authorization:  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJTdWIiOiJkMjg4ZDQyMi05NWM0LTQ4ZDMtYTM4NS1lOGQzZWQwMjkyODYiLCJOYW1lIjoiTWFnZ2llIiwiaXNBZG1pbiI6MSwiaWF0IjoxNzE4NjM1MTkzLCJleHAiOjE3MTg2Mzg3OTN9.8cW4q1u_l-zsZuZpzSrL29HvB-Pi9Wptio_8M-187kM
+Content-Type: application/json
+
+{
+  "name": "Nakuru",
+  "description": "Flamingos allover",
+  "price": 5000,
+  "duration": 3
+}
+
+### 
+GET http://localhost:3000/tours
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJTdWIiOiJkMWY1ZmUxOC0xMGM1LTQ5NTItYmI1YS1mODBmYjNlMGQ0Y2YiLCJOYW1lIjoiSm9zZXBoIG11aGlhIiwiaXNBZG1pbiI6MSwiaWF0IjoxNzE4NjMxMTc2LCJleHAiOjE3MTg2MzQ3NzZ9.fOYArs0AKenbLlaImXfRzFKynlodknHJ_lwzGr52ICQ
+
+### Add Hotel
+POST http://localhost:3000/hotels
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJTdWIiOiJkMWY1ZmUxOC0xMGM1LTQ5NTItYmI1YS1mODBmYjNlMGQ0Y2YiLCJOYW1lIjoiSm9zZXBoIG11aGlhIiwiaXNBZG1pbiI6MSwiaWF0IjoxNzE4NjMxMTc2LCJleHAiOjE3MTg2MzQ3NzZ9.fOYArs0AKenbLlaImXfRzFKynlodknHJ_lwzGr52ICQ
+Content-Type: application/json
+
+{
+  "name": "Nairobi",
+  "location": "oyugis",
+  "price": 1600
+}
+
+
+### Get All Hotels
+GET http://localhost:3000/hotels
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJTdWIiOiI3ODBlZDNhYS01NGNmLTQ0ZDktYWE0Ni0yZDQwYjFjZGNjZmIiLCJOYW1lIjoiSm9zZXBoIG11aGlhIiwiaXNBZG1pbiI6MCwiaWF0IjoxNzE4NjMwNjgxLCJleHAiOjE3MTg2MzQyODF9.EnJ86IWWK6z1ZO2b7MXR4dtCw4PHnNP6J5UIyd52Lxw
+
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJTdWIiOiI3ODBlZDNhYS01NGNmLTQ0ZDktYWE0Ni0yZDQwYjFjZGNjZmIiLCJOYW1lIjoiSm9zZXBoIG11aGlhIiwiaXNBZG1pbiI6MCwiaWF0IjoxNzE4NjMwNjgxLCJleHAiOjE3MTg2MzQyODF9.EnJ86IWWK6z1ZO2b7MXR4dtCw4PHnNP6J5UIyd52Lxw
+
+### Update Hotel
+PUT http://localhost:3000/hotels/b72050aa-08f9-4fc7-b779-b044d90c3a4c
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJTdWIiOiJkMWY1ZmUxOC0xMGM1LTQ5NTItYmI1YS1mODBmYjNlMGQ0Y2YiLCJOYW1lIjoiSm9zZXBoIG11aGlhIiwiaXNBZG1pbiI6MSwiaWF0IjoxNzE4NjMxMTc2LCJleHAiOjE3MTg2MzQ3NzZ9.fOYArs0AKenbLlaImXfRzFKynlodknHJ_lwzGr52ICQ
+Content-Type: application/json
+
+{
+  "name": "Pwani",
+  "location": "Pwani here we come",
+  "price": 12400
+}
+
+
+### Delete Hotel
+DELETE http://localhost:3000/hotels/3c8cd1b3-5563-42b9-a507-73391dcf3d23
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJTdWIiOiJkMWY1ZmUxOC0xMGM1LTQ5NTItYmI1YS1mODBmYjNlMGQ0Y2YiLCJOYW1lIjoiSm9zZXBoIG11aGlhIiwiaXNBZG1pbiI6MSwiaWF0IjoxNzE4NjMxMTc2LCJleHAiOjE3MTg2MzQ3NzZ9.fOYArs0AKenbLlaImXfRzFKynlodknHJ_lwzGr52ICQ
+
+
+
+### Add Booking
+POST http://localhost:3000/bookings
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJTdWIiOiJkMWY1ZmUxOC0xMGM1LTQ5NTItYmI1YS1mODBmYjNlMGQ0Y2YiLCJOYW1lIjoiSm9zZXBoIG11aGlhIiwiaXNBZG1pbiI6MSwiaWF0IjoxNzE4NjMyOTI1LCJleHAiOjE3MTg2MzY1MjV9.civ9YIt9q1kMBc9ki5nTXwxahvgnkWOcLvDMDDM4VMs
+Content-Type: application/json
+
+{
+  "userId": "780ed3aa-54cf-44d9-aa46-2d40b1cdccfb",
+  "tourId": "e61830bd-3b7a-46f7-9763-62068af63338f",
+  "hotelId": "5fe4da85-51d9-49ff-a471-487f3fa9ba36"
+}
+
+### Get All Bookings
+GET http://localhost:3000/bookings
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJTdWIiOiJkMWY1ZmUxOC0xMGM1LTQ5NTItYmI1YS1mODBmYjNlMGQ0Y2YiLCJOYW1lIjoiSm9zZXBoIG11aGlhIiwiaXNBZG1pbiI6MSwiaWF0IjoxNzE4NjMxMTc2LCJleHAiOjE3MTg2MzQ3NzZ9.fOYArs0AKenbLlaImXfRzFKynlodknHJ_lwzGr52ICQ
+
+### booking bt id
+GET http://localhost:3000/bookings/b97140e0-f18d-4319-a189-018145ed046d
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJTdWIiOiJkMWY1ZmUxOC0xMGM1LTQ5NTItYmI1YS1mODBmYjNlMGQ0Y2YiLCJOYW1lIjoiSm9zZXBoIG11aGlhIiwiaXNBZG1pbiI6MSwiaWF0IjoxNzE4NjMxMTc2LCJleHAiOjE3MTg2MzQ3NzZ9.fOYArs0AKenbLlaImXfRzFKynlodknHJ_lwzGr52ICQ
+
+### put
+PUT http://localhost:3000/bookings/acf6eec5-e721-43a8-99c1-7e2bbd1d3139
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJTdWIiOiJkMWY1ZmUxOC0xMGM1LTQ5NTItYmI1YS1mODBmYjNlMGQ0Y2YiLCJOYW1lIjoiSm9zZXBoIG11aGlhIiwiaXNBZG1pbiI6MSwiaWF0IjoxNzE4NjMxMTc2LCJleHAiOjE3MTg2MzQ3NzZ9.fOYArs0AKenbLlaImXfRzFKynlodknHJ_lwzGr52ICQ
+Content-Type: application/json
+
+{
+  "status": "pending"
+}
+###
+PUT http://localhost:3000/bookings/acf6eec5-e721-43a8-99c1-7e2bbd1d3139
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJTdWIiOiJkMWY1ZmUxOC0xMGM1LTQ5NTItYmI1YS1mODBmYjNlMGQ0Y2YiLCJOYW1lIjoiSm9zZXBoIG11aGlhIiwiaXNBZG1pbiI6MSwiaWF0IjoxNzE4NjMxMTc2LCJleHAiOjE3MTg2MzQ3NzZ9.fOYArs0AKenbLlaImXfRzFKynlodknHJ_lwzGr52ICQ
+Content-Type: application/json
+
+{
+  "status": "confirmed"
+}
+
+### Cancel Booking
+DELETE http://localhost:3000/bookings/acf6eec5-e721-43a8-99c1-7e2bbd1d3139
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJTdWIiOiJkMWY1ZmUxOC0xMGM1LTQ5NTItYmI1YS1mODBmYjNlMGQ0Y2YiLCJOYW1lIjoiSm9zZXBoIG11aGlhIiwiaXNBZG1pbiI6MSwiaWF0IjoxNzE4NjMxMTc2LCJleHAiOjE3MTg2MzQ3NzZ9.fOYArs0AKenbLlaImXfRzFKynlodknHJ_lwzGr52ICQ
+
+###
+POST http://localhost:3000/auth/register
+Content-Type: application/json
+
+{
+  "Name": "Joseph muhia",
+  "Email": "maina.joseph20@students.dkut.ac.ke",
+  "Password": "Muhia01234!",
+  "isAdmin": 0
+   
+
+}
+###
+POST http://localhost:3000/auth/register
+Content-Type: application/json
+
+{
+  "Name": "Joseph muhia",
+  "Email": "lmuhiamaina42@gmail.com",
+  "Password": "Muhhia01234!",
+  "isAdmin": 0
+   
+
+}
+
+###
+POST http://localhost:3000/auth/register
+Content-Type: application/json
+
+{
+  "Name": "Maggie",
+  "Email": "maggiegeorges254@gmail.com",
+  "Password": "Maggie123!",
+  "isAdmin": 1
+   
+
+}
+###
+
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+  "email": "maggiegeorges254@gmail.com",
+  "password": "Maggie123!",
+  "isEmailSent": 0
+
+}
